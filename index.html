@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Guven!</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <img style="display: none" src="images/img_1.jpg" alt="">
+  <img style="display: none" src="images/img_2.jpg" alt="">
+  <img style="display: none" src="images/img_3.jpg" alt="">
+  <img style="display: none" src="images/img_4.jpg" alt="">
+  <img src="images/img_5.jpg" alt="">
+  <div id="text">
+    <p>
+      Happy Birthday Güven,<br>
+      This domain is now yours. Be very very very careful, and use it responsibly.<br>
+      Love always, your best skalpals<br>
+      Luckey, Isa, and Finya
+    </p>
+    <p><i>
+      Bonus present: You can also have https://github.com/skalpal (contact me for password)
+    </i></p>
+  </div>
+  <script>
+    [].forEach.call(document.querySelectorAll('img'), function (el) {
+      el.style.display = 'none';
+    });
+
+    var now = Date.now();
+    document.querySelectorAll('img')[now % 5].style.display = 'block';
+  </script>
+  <!-- Ali built this :) -->
+</body>
+</html>
